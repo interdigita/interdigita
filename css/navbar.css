@@ -1,0 +1,202 @@
+#mainNav{
+    background-color: transparent;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+.navbar{
+	background-color:transparent;
+    z-index:10;
+    border-radius:0;
+    border-color:transparent;
+	width:100%;
+    margin-bottom: 0;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #777;
+    opacity: 1;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Montserrat-Regular', sans-serif;
+    position: relative;
+}
+
+.navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-nav>li>a:focus {
+    color: #ffffff;
+    opacity: 1;
+}
+
+.navbar-default .navbar-nav>li>a.chat-button{
+    padding: 7px 18px;
+    background-color: #79d156;
+    border-radius: 4px;
+    color: #469d24;
+    opacity: 1;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    margin-left: 15px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#79d156+0,79d156+50,ffffff+50,ffffff+100 */
+    background: #79d156; /* Old browsers */
+    background: -moz-linear-gradient(top,  #79d156 0%, #79d156 50%, #ffffff 50%, #ffffff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #79d156 0%,#79d156 50%,#ffffff 50%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #79d156 0%,#79d156 50%,#ffffff 50%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#79d156', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+    background-size: 100% 200%;
+    background-position: 0% 0%;
+    
+    transition: all 0.3s cubic-bezier(1, .02, 0, .99) 0.0s;
+
+}
+
+.navbar-default .navbar-nav>li>a.chat-button:hover,.navbar-default .navbar-nav>li>a.chat-button:focus{
+    background-position: 0% 100%;
+    color: #075b7a;
+}
+@media (min-width: 768px){
+    .navbar-nav>li>a {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.navbar-brand {
+        height: 100%;
+    padding: 20px 15px
+}
+
+.navbar-default .navbar-toggle{
+    border: 0px;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+    background-color: #ffffff;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+    background-color: transparent;
+    opacity: 0.7;
+}
+
+.navbar-toggle{
+    margin-top: 12px;
+}
+@media (max-width: 768px) {
+	#mainNav{
+    background-color:  #ffffff;
+}
+    .navbar-default .navbar-nav>li>a{
+        text-align: center;
+    }
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+        border: 0;
+    }
+    .navbar-default .navbar-nav>li>a.chat-button{
+        margin-right: 15px;
+    }
+}
+
+
+/***
+Pre-Header and pre-header elements
+***/
+.pre-header {
+	color: #616b76;
+	padding-top: 20px;
+	line-height: 1.2;
+	font-family: 'hind', sans-serif;
+	font-weight: 300;
+	background: #fff;
+	font-size: 13px;
+}
+.pre-header ol, ul {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.pre-header a {
+	color: #616b76;
+}
+.pre-header a:hover {
+	color: #E02222;
+}
+.pre-header a:focus {
+	text-decoration: none;
+}
+.pre-header li {
+	padding-left: 11px;
+	padding-right: 15px;
+	border-right: solid 1px #d8d8d8;
+}
+.pre-header li:last-child {
+	border: none;
+}
+.additional-nav {
+	border-bottom:2px solid #d3d4d3;
+}
+.additional-shop-info li:first-child {
+	padding-left: 0;
+}
+.additional-nav li:last-child {
+	padding-right: 0;
+}
+.pre-header .fa {
+	margin-right: 4px;
+}
+.shop-currencies a {
+	margin-right: 6px;
+}
+.shop-currencies a:last-child {
+	margin-right: 0;
+}
+.shop-currencies a.current {
+	color: #E02222;
+}
+
+/* langs block */
+.langs-block {
+	position: relative;
+}
+.langs-block .fa {
+	margin-right: 0;
+}
+.langs-block-others-wrapper {
+	position: absolute;
+	left: 0;
+	top: 100%;
+    z-index: 99999;
+}
+.langs-block-others {
+	padding: 10px 10px 2px;
+	background: #F9F9F9;
+	z-index: 9999;
+	width: 100px;
+	display: none;
+	margin-top: 12px;
+	border-top: solid 2px #ea4c1d;
+	box-shadow: 5px 5px rgba(91, 91, 91, 0.2);
+	position: relative;
+	transition: opacity .3s ease-in-out;
+	-moz-transition: opacity .3s ease-in-out;
+	-webkit-transition: opacity .3s ease-in-out;
+}
+.langs-block-others:after { 
+	top: -8px;
+	width: 0; 
+	height: 0;
+	left: 8px;
+	z-index: 2; 
+	content: " "; 
+	display: block; 
+	position: absolute;
+	border-bottom: 8px solid #e6400c;
+	border-right: 8px solid transparent;
+	border-left: 8px solid transparent;
+}
+.langs-block:hover .langs-block-others {
+	display: block;
+}
+.langs-block-others a {
+	display: block;
+	margin-bottom: 8px;
+}

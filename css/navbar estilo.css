@@ -1,0 +1,184 @@
+.content-md {
+    padding-top: 80px;
+    padding-bottom:0;
+}
+.content-md h2{
+    font-family: 'Hind', sans-serif;
+	font-weight: 700;
+    color: #515769;
+    line-height: 1.4;
+    margin:0 0 5px;
+}
+.content-md p{
+    font-size: 13px;
+    font-weight: 400;
+    color: #656d78;
+    margin-bottom: 15px;
+	line-height: 1.6;
+}
+.content-md:after {
+    border-top: 20px solid #fff;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    content: "";
+    position: absolute;
+    left: 10%;
+    margin-left: 0px;
+    width: 0;
+    height: 0;;
+}
+
+.pre-header {
+	color: #616b76;
+	padding-top: 20px;
+	line-height: 1.2;
+	font-family: 'hind', sans-serif;
+	font-weight: 300;
+	background: #fff;
+	font-size: 13px;
+}
+.pre-header ol, ul {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.pre-header a {
+	color: #616b76;
+}
+.pre-header a:hover {
+	color: #E02222;
+}
+.pre-header a:focus {
+	text-decoration: none;
+}
+.pre-header li {
+	padding-left: 11px;
+	padding-right: 15px;
+	border-right: solid 1px #d8d8d8;
+}
+.pre-header li:last-child {
+	border: none;
+}
+.additional-nav {
+	border-bottom:2px solid #efefef;
+}
+.additional-nav li:last-child {
+	padding-right: 0;
+}
+.additional-nav li.telefono {
+	color: #00aeef;
+}
+.additional-nav li.telefono span {
+	color: #00aeef;
+	font-weight:bold;
+	font-size:15px;
+	padding-left:5px;
+}
+.additional-nav li.telefono i{
+	color: #00aeef;
+	font-weight:bold;
+	font-size:15px;
+	padding-left:5px;
+}
+
+.pre-header .fa {
+	margin-right: 4px;
+}
+
+#menu{
+    background-color: rgb(255, 255, 255);
+	padding-top: 10px;
+    border-top: 0;
+}
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 5px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background-color: #ffffff;
+    color: #00abea;
+    border-bottom: 3px solid #00aeef;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #212121;
+    background-color: transparent;
+	border-bottom: 3px solid #red;
+}
+/* navbar login */
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+}
+#login-dp .help-block{
+    font-size:12px    
+}
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .social-buttons{
+    margin:12px 0    
+}
+#login-dp .social-buttons a{
+    width: 99%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc 
+}
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+}
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
+}
+@media(max-width:768px){
+    #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
+}
+/* navbar multi submenu */
+.dropdown-submenu{position:relative;}
+.dropdown-submenu>{top:0;left:100%;margin-top:-6px;margin-left:-1px;-webkit-border-radius:0 6px 6px 6px;-moz-border-radius:0 6px 6px 6px;border-radius:0 6px 6px 6px;}
+.dropdown-submenu>a:after{display:block;content:" ";float:right;width:0;height:0;border-color:transparent;border-style:solid;border-width:5px 0 5px 5px;border-left-color:#cccccc;margin-top:5px;margin-right:-10px;}
+.dropdown-submenu:hover>a:after{border-left-color:#555;}
+.dropdown-submenu.pull-left{float:none;}.dropdown-submenu.pull-left>{left:-100%;margin-left:10px;-webkit-border-radius:6px 0 6px 6px;-moz-border-radius:6px 0 6px 6px;border-radius:6px 0 6px 6px;}
+/* ham submenu */
+
+@media(min-width:768px){
+.dropdown-menu {
+  opacity: 0;
+  visibility: hidden;
+  transform-origin: top;
+  animation-fill-mode: forwards; 
+  transform: scale(0.9, 0.7) translateY(-20px);
+  display: block; 
+  transition: all 0.4s; ease;
+}
+.open > .dropdown-menu {
+  transform: scale(1, 1) translateY(0);  
+  opacity: 1;
+  visibility: visible;
+}
+}
